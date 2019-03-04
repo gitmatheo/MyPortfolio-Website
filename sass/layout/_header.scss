@@ -4,7 +4,7 @@
       rgba($color-primary, 0.8),
       rgba($color-primary-dark, 1)
     ),
-    url(../images/hero-small2.jpg);
+    url(../images/hero-desktop.jpg);
   background-size: cover;
   background-position: top;
   position: relative;
@@ -34,13 +34,32 @@
         rgba($color-primary-light, 0.9),
         rgba($color-primary-dark, 0.9)
       ),
-      url(../img/hero-small2.jpg);
+      url(../img/hero-tab.jpg);
   }
 
   @include respond(phone) {
+      background-image: linear-gradient(
+      rgba($color-primary, 0.8),
+      rgba($color-primary-dark, 1)
+    ),
+    url(../images/hero-phone.jpg);
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 10em));
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 10em));
   }
+
+    @include respond(tab-land) {
+      background-image: linear-gradient(
+      rgba($color-primary, 0.8),
+      rgba($color-primary-dark, 1)
+    ),
+    url(../images/hero-tab.jpg);
+  }
+
+  @include respond(tab-port) {
+    // width < 900?
+    font-size: 50%; //1 rem = 8px, 8/16 = 50%
+  }
+
 
   &__socials {
     ul {

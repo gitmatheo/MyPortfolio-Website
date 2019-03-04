@@ -3,23 +3,18 @@
 body {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  /*font-size: 16px;*/
-  // line-height: 1.7;
   color: $color-grey-dark;
 }
 
 .heading-primary {
   color: $color-white;
   text-transform: uppercase;
-
   backface-visibility: hidden;
   margin-bottom: 6rem;
 
   &--main {
-    // display: block;
     font-size: 6rem;
     font-weight: 200;
-
     animation-name: moveInLeft;
     animation-duration: 1s;
     animation-timing-function: ease-out;
@@ -27,19 +22,13 @@ body {
     @include respond(phone) {
       font-family: 5rem;
     }
-    /*
-      animation-delay: 3s;
-      animation-iteration-count: 3;
-      */
   }
 
   &--sub {
     display: block;
     font-size: 2rem;
     font-weight: 700;
-
     animation: moveInRight 1s ease-out;
-
     @include respond(phone) {
     }
   }
@@ -81,7 +70,6 @@ body {
 
 .paragraph {
   font-size: $default-font-size;
-
   &:not(:last-child) {
     margin-bottom: 3rem;
   }

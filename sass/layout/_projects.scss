@@ -90,6 +90,7 @@
 
 .card-top {
   padding: 0;
+ backface-visibility: hidden;
   &__fig {
     position: relative;
     overflow: hidden;
