@@ -1,0 +1,37 @@
+.about {
+  background: $color-grey-light-2;
+  color: $color-primary-dark;
+
+  &__container {
+    // height: calc(40vh + 40em);
+    width: 100%;
+    max-width: 140rem;
+    padding: 20rem $padding-md 25rem $padding-md;
+    margin: -15em auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include respond(phone) {
+      flex-direction: column;
+      padding: 20rem 1rem 25rem 1rem;
+    }
+  }
+
+  &__content {
+    margin-left: 3em;
+    h2 {
+      font-size: 4.5em;
+      line-height: 1.8em;
+    }
+    p {
+      font-size: $default-font-size;
+      line-height: 1.4em;
+    }
+  }
+
+  &__img {
+    height: 20rem;
+    border-radius: 50%;
+    backface-visibility: cover;
+  }
+}

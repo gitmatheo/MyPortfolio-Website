@@ -1,0 +1,200 @@
+.projects {
+  background: $color-primary-dark;
+  -webkit-clip-path: polygon(0 10em, 100% 0, 100% calc(100% - 10em), 0% 100%);
+  clip-path: polygon(0 10em, 100% 0, 100% calc(100% - 10em), 0% 100%);
+  overflow: hidden;
+  &__wrapper {
+    grid-column: center-start/ center-end;
+    margin: 0 auto;
+    max-width: 140rem;
+    padding: 15em $padding-md;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(25rem, 1fr));
+    grid-gap: 7rem;
+
+    @include respond(tab-land) {
+      // width < 1200?
+      grid-template-columns: repeat(2, minmax(25rem, 1fr));
+    }
+
+    @include respond(phone) {
+      // width < 900?
+      grid-template-columns: minmax(25rem, 1fr);
+    }
+
+    @include respond(big-desktop) {
+      font-size: 75%; //1rem = 12, 12/16
+    }
+  }
+}
+
+.project {
+  background-color: $color-primary;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  & > * {
+    padding: 3rem;
+    color: rgba($color-white, 0.9);
+  }
+  &__img {
+    width: 100%;
+  }
+
+  &__name {
+    width: calc(100% - 3em);
+    margin: 0 3rem;
+    font-size: $font-size-medium;
+    font-weight: 400;
+    padding: 0.5rem 0rem;
+    border-bottom: 1px solid rgba($color-white, 0.9);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    // &::before,
+    // &::after {
+    //   content: "";
+    //   background: rgba(white, 0.8);
+    //   width: 15%;
+    //   height: 1px;
+    // }
+    // &::before {
+    //   margin-left: 0.5em;
+    //   margin-right: auto;
+    // }
+    // &::after {
+    //   margin-right: 0.5em;
+    //   margin-left: auto;
+    // }
+  }
+
+  &__description {
+    font-size: $default-font-size;
+    display: flex;
+    align-items: center;
+  }
+
+  &__btns-wrapper {
+    margin-top: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__btn {
+    width: 45%;
+    padding: 1.5rem 0rem !important;
+  }
+}
+
+.card-top {
+  padding: 0;
+  &__fig {
+    position: relative;
+    overflow: hidden;
+    .card-top__figcap::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.5);
+      content: "";
+      -webkit-transition: -webkit-transform 0.6s;
+      transition: transform 0.6s;
+      -webkit-transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg)
+        translate3d(0, -100%, 0);
+      transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg)
+        translate3d(0, -100%, 0);
+    }
+    ul {
+      list-style: none;
+      position: absolute;
+      right: 1.5em;
+      bottom: 1.5em;
+      padding: 0 1em;
+      border-right: 4px solid #fff;
+      font-size: $default-font-size;
+      text-align: right;
+      opacity: 0;
+      -webkit-transition: opacity 0.35s;
+      transition: opacity 0.35s;
+    }
+    &:hover {
+      ul {
+        opacity: 1;
+        -webkit-transition-delay: 0.1s;
+        transition-delay: 0.1s;
+      }
+      .card-top__img {
+        opacity: 0.1;
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+      }
+      .card-top__figcap {
+        &::before {
+          -webkit-transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg)
+            translate3d(0, 100%, 0);
+          transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg)
+            translate3d(0, 100%, 0);
+        }
+      }
+      .card-top__heading {
+        color: white;
+        background: transparent;
+      }
+    }
+  }
+  &__img {
+    position: relative;
+    padding: 1em;
+    display: block;
+    min-height: 100%;
+    max-width: 100%;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: scale3d(1.05, 1.05, 1);
+    transform: scale3d(1.05, 1.05, 1);
+    padding: $padding-sm;
+  }
+
+  &__figcap {
+    padding: 2em;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: $font-size-small;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    &::before,
+    &::after {
+      pointer-events: none;
+    }
+  }
+  &__figcap,
+  &__figcap > a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  &__figcap > a {
+    z-index: 1000;
+    text-indent: 200%;
+    white-space: nowrap;
+    font-size: 0;
+    opacity: 0;
+  }
+  &__heading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0.2em 0.8em;
+    margin: 1em;
+    background: rgba($color-white, 0.9);
+    color: $color-primary-dark;
+    font-size: $default-font-size;
+    transition: all 0.2s;
+  }
+}

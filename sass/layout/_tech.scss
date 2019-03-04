@@ -1,0 +1,73 @@
+.tech {
+  color: $color-primary-dark;
+  font-size: 1.8rem;
+
+  &__wrapper {
+    padding: $padding-md;
+    max-width: 140rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row-reverse;
+    // background: teal;
+
+    @include respond(tab-port) {
+      flex-direction: row-reverse;
+    }
+
+    @include respond(phone) {
+      flex-direction: column;
+    }
+
+    &--right {
+      text-align: right;
+    }
+    ul {
+      list-style: none;
+      line-height: 150%;
+    }
+  }
+  &__title {
+  }
+  &__desc {
+    font-size: 1.8rem;
+  }
+
+  &__content-wrapper {
+    // background: greenyellow;
+    margin-left: 5rem;
+
+    @include respond(phone) {
+      width: 100%;
+      margin-left: 0;
+      margin-bottom: 5rem;
+    }
+    &--reversed {
+      // order: 2;
+      align-items: flex-end;
+    }
+  }
+  &__logos-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 31%;
+    // background: red;
+
+    @include respond(tab-port) {
+      width: 50%;
+    }
+    @include respond(phone) {
+      width: 100%;
+    }
+  }
+  &__logo {
+    height: 10rem;
+    flex-basis: 6rem;
+    margin: 0 0.5rem;
+    fill: currentColor;
+    flex-grow: 1;
+    // margin: 1rem;
+  }
+}

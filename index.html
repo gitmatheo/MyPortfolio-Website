@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"></meta>
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  ></meta>
+  <meta
+    http-equiv="X-UA-Compatible"
+    content="ie=edge"
+  ></meta>
+  <title>
+    Mateusz Dominiak - Junior Front-End Developer
+  </title>
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous"
+  ></link>
+  <link
+    rel="stylesheet"
+    href="css/style.css"
+  ></link>
+      <!-- scripts -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+      <script src="js/main.js"></script>
+</head>
+
+<body>
+  <div class="navigation">
+    <input
+      type="checkbox"
+      class="navigation__checkbox"
+      id="navi-toggle"
+    ></input>
+
+    <label
+      for="navi-toggle"
+      class="navigation__button"
+    >
+      <span class="navigation__icon">&nbsp;</span>
+    </label>
+
+    <div class="navigation__background">&nbsp;</div>
+
+    <nav class="navigation__nav">
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a
+            href="#home"
+            class="navigation__link"
+          >Home</a>
+        </li>
+
+        <li class="navigation__item">
+          <a
+            href="#about"
+            class="navigation__link"
+          >O mnie</a>
+        </li>
+
+        <li class="navigation__item">
+          <a
+            href="#projects"
+            class="navigation__link"
+          >Projekty</a>
+        </li>
+
+        <li class="navigation__item">
+          <a
+            href="#tech"
+            class="navigation__link"
+          >Technologie</a>
+        </li>
+
+        <li class="navigation__item">
+          <a
+            href="#contact"
+            class="navigation__link"
+          >Kontakt</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <header
+    class="header"
+    id="home"
+  >
+  <div  id="particles-js"></div>
+
+<div class="header__wrapper">
+    <div class="header__logo-box">
+        <img
+          src="images/logo-white.svg"
+          alt="Logo"
+          class="header__logo"
+        >
+      </div>
+  <div class="header__text-box">
+    <h1 class="heading-primary">
+      <span class="heading-primary--main ">Mateusz <span class="strong">Dominiak</span></span>
+
+      <span class="heading-primary--sub">Junior Front-End Developer</span>
+    </h1>
+
+    <a
+      href="#projects"
+      class="header__btn btn btn--white btn--animated"
+    >Zobacz projekty</a>
+    <a
+    href="#cv"
+    class="header__btn btn btn--white btn--animated"
+  >Pobierz CV</a>
+
+  <div class="header__socials">
+      <ul>
+        <li>
+          <a
+            href="https://github.com/gitmatheo"
+            target="_blank"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/mateusz-dominiak/"
+            target="_blank"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.youtube.com/user/matteuszd"
+            target="_blank"
+          >
+            <i class="fab fa-youtube"></i>
+          </a>
+        </li>
+        <li>
+          <a
+            href="http://facebook.com/mateuszdominiak"
+            target="_blank"
+          >
+            <i class="fab fa-facebook"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+
+  </header>
+
+  <!-- SECTION ABOUT -->
+
+  <section
+    class="about"
+    id="about"
+  >
+  <div class="about__container">
+    <img
+      class="about__img"
+      src="images/face.jpg"
+      alt="Author photo"
+    >
+
+    <div class="about__content">
+      <h2>O mnie.</h2>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat, quaerat inventore omnis sit nam unde sapiente, fuga voluptatum quidem ex assumenda repellat cupiditate, tenetur qui quo tempora est pariatur quisquam.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat, quaerat inventore omnis sit nam unde sapiente, fuga voluptatum quidem ex assumenda repellat cupiditate, tenetur qui quo tempora est pariatur quisquam. 
+      </p>
+    </div>
+  </div>
+  </section>
+
+  <!-- SECTION PROJECTS -->
+
+  <section
+    class="divider"
+    id="projects"
+  >
+    <div class="divider__wrapper">
+      <h3 class="divider__title">Projekty</h3>
+
+      <p class="divider__desc">
+        Poniżej znajdziesz niektóre z moich ostatnich projektów. Są tu zarówno moje własne projekty, jak i te wykonane w ramach kursów online.
+      </p>
+    </div>
+  </section>
+
+  <!-- SECTION MY PROJECTS -->
+
+  <section class="projects">
+    <div class="projects__wrapper">
+    <div class="project">
+      <div class="card-top">
+        <figure class="project__img  card-top__fig">
+          <img
+            class="card-top__img"
+            src="images/natours.png"
+            alt="Mockup project 1"
+          >
+
+          <figcaption class="card-top__figcap">
+            <h2 class="card-top__heading">
+              <span>Natours</span>
+            </h2>
+
+            <ul>
+              <li>HTML</li>
+
+              <li>CSS</li>
+
+              <li>Sass</li>
+            </ul>
+          </figcaption>
+        </figure>
+      </div>
+
+      <h5 class="project__name">Natours</h5>
+
+      <div class="project__description">
+        <p>
+          Landing page dla zmyślonej firmy zajmującej się organizowaniem wycieczek turystycznych. Strona wykonana w ramach kursu "Advanced CSS Course" z Udemy.com. Stylowana głównie za pomocą floatów.
+        </p>
+      </div>
+
+      <div class="project__btns-wrapper">
+        <a
+          href="https://github.com/gitmatheo/Natours"
+          class="project__btn btn btn--anim1 btn--inverted"
+          target="_blank"
+        >Github</a>
+
+        <a
+          href="https://gitmatheo.github.io/Natours/"
+          class="project__btn btn btn--anim1 btn--inverted"
+          target="_blank"
+        >Live</a>
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="card-top">
+        <figure class="project__img  card-top__fig">
+          <img
+            class="card-top__img"
+            src="images/trillo.png"
+            alt="Mockup project 2"
+          >
+
+          <figcaption class="card-top__figcap">
+            <h2 class="card-top__heading">
+              <span>Trillo</span>
+            </h2>
+
+            <ul>
+              <li>HTML</li>
+
+              <li>CSS</li>
+
+              <li>Sass</li>
+            </ul>
+          </figcaption>
+        </figure>
+      </div>
+
+      <h5 class="project__name">Trillo</h5>
+
+      <div class="project__description">
+        <p>
+          Landing page dla zmyślonej firmy zajmującej się organizowaniem wycieczek turystycznych. Strona wykonana w ramach kursu "Advanced CSS Course" z Udemy.com. Stylowana głównie za pomocą CSS Flexbox
+        </p>
+      </div>
+
+      <div class="project__btns-wrapper">
+        <a
+          href="https://github.com/gitmatheo/Trillo"
+          class="project__btn btn btn--anim1 btn--inverted"
+          target="_blank"
+        >Github</a>
+
+        <a
+          href="https://gitmatheo.github.io/Trillo"
+          class="project__btn btn btn--anim1 btn--inverted"
+          target="_blank"
+        >Live</a>
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="card-top">
+        <figure class="project__img  card-top__fig">
+          <img
+            class="card-top__img"
+            src="images/nexter.png"
+            alt="Mockup project 3"
+          >
+
+          <figcaption class="card-top__figcap">
+            <h2 class="card-top__heading">
+              <span>Nexter</span>
+            </h2>
+
+            <ul>
+              <li>HTML</li>
+
+              <li>CSS</li>
+
+              <li>Sass</li>
+            </ul>
+          </figcaption>
+        </figure>
+      </div>
+
+      <h5 class="project__name">Nexter</h5>
+
+      <div class="project__description">
+        <p>
+          Landing page dla zmyślonej firmy zajmującej się luksusowymi
+                        nieruchomościami. Strona wykonana w ramach kursu "Advanced CSS
+                        Course" z Udemy.com. Stylowana głównie za pomocą CSS Grid
+        </p>
+      </div>
+
+      <div class="project__btns-wrapper">
+        <a
+          href="https://github.com/gitmatheo/Nexter"
+          class="project__btn btn btn--anim1 btn--inverted"
+          target="_blank"
+        >Github</a>
+
+        <a
+          href="https://gitmatheo.github.io/Nexter/"
+          class="project__btn btn btn--anim1 btn--inverted"
+          target="_blank"
+        >Live</a>
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="card-top">
+        <figure class="project__img  card-top__fig">
+          <img
+            class="card-top__img"
+            src="images/react-weather-app.png"
+            alt="Mockup project 5"
+          >
+
+          <figcaption class="card-top__figcap">
+            <h2 class="card-top__heading">
+              React
+
+              <span>Weather App</span>
+            </h2>
+
+            <ul>
+              <li>React JS</li>
+
+              <li>Styled Components</li>
+
+              <li>HTML</li>
+
+              <li>CSS</li>
+
+              <li>Sass</li>
+            </ul>
+          </figcaption>
+        </figure>
+      </div>
+
+      <h5 class="project__name">React Weather App</h5>
+
+      <div class="project__description">
+        <p>
+          Prosta aplikacja pogodowa napisana z użyciem biblioteki react i styled components
+        </p>
+      </div>
+
+      <div class="project__btns-wrapper">
+        <a
+          href="https://github.com/gitmatheo/React-Weather-App"
+          class="project__btn btn btn--anim1 btn--inverted"
+          target="_blank"
+        >Github</a>
+
+        <a
+          href="https://gitmatheo.github.io/React-Weather-App/"
+          class="project__btn btn btn--anim1 btn--inverted"
+          target="_blank"
+        >Live</a>
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="card-top">
+        <figure class="project__img  card-top__fig">
+          <img
+            class="card-top__img"
+            src="images/react-football-app.png"
+            alt="Mockup project 7"
+          >
+
+          <figcaption class="card-top__figcap">
+            <h2 class="card-top__heading">React Football App</h2>
+
+            <ul>
+              <li>HTML</li>
+
+              <li>CSS</li>
+
+              <li>Sass</li>
+
+              <li>React JS</li>
+
+              <li>React Router</li>
+
+              <li>React Reveal</li>
+
+              <li>Material UI</li>
+
+              <li>
+                Firebase (auth, storage, database)
+              </li>
+            </ul>
+          </figcaption>
+        </figure>
+      </div>
+
+      <h5 class="project__name">React Football App</h5>
+
+      <div class="project__description">
+        <p>
+          Strona napisana w ramach kursu "The React practice course, learn by building projects." z Udemy.com React.js z możliwością rejestracji użytkownika. Baza danych i autoryzacja obsługiwana przez Firebase. Do routingu wykorzystany React router v4. Za animacje odpowiedzialny React Reveal i React Move
+        </p>
+      </div>
+
+      <div class="project__btns-wrapper">
+        <a
+          href="https://github.com/gitmatheo/React-football-app"
+          class="project__btn btn btn--anim1 btn--inverted"
+          target="_blank"
+        >Github</a>
+
+        <a
+          href="https://m-city-f1280.firebaseapp.com/"
+          class="project__btn btn btn--anim1 btn--inverted"
+          target="_blank"
+        >Live</a>
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="card-top">
+        <figure class="project__img  card-top__fig">
+          <img
+            class="card-top__img"
+            src="images/react-todo-app.png"
+            alt="Mockup project 7"
+          >
+
+          <figcaption class="card-top__figcap">
+            <h2 class="card-top__heading">React TodoApp</h2>
+
+            <ul>
+              <li>HTML</li>
+
+              <li>CSS</li>
+
+              <li>Sass</li>
+
+              <li>React JS</li>
+
+              <li>Styled Components</li>
+            </ul>
+          </figcaption>
+        </figure>
+      </div>
+
+      <h5 class="project__name">React TodoApp</h5>
+
+      <div class="project__description">
+        <p>
+          TodoApp wykonana w ramach ćwiczeń biblioteki React.js zapisująca aktualny stan zadań do localstorage
+        </p>
+      </div>
+
+      <div class="project__btns-wrapper">
+        <a
+          href="https://github.com/gitmatheo/React-football-app"
+          class="project__btn btn btn--anim1 btn--inverted"
+          target="_blank"
+        >Github</a>
+
+        <a
+          href="https://gitmatheo.github.io/React-todoapp/"
+          class="project__btn btn btn--anim1 btn--inverted"
+          target="_blank"
+        >Live</a>
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="card-top">
+        <figure class="project__img  card-top__fig">
+          <img
+            class="card-top__img"
+            src="images/milk.png"
+            alt="Mockup project 4"
+          >
+
+          <figcaption class="card-top__figcap">
+            <h2 class="card-top__heading">
+              Szkoła
+
+              <span>rodzenia - Milk</span>
+            </h2>
+
+            <ul>
+              <li>WordPress</li>
+
+              <li>Divi Theme</li>
+
+              <li>HTML</li>
+
+              <li>CSS</li>
+            </ul>
+          </figcaption>
+        </figure>
+      </div>
+
+      <h5 class="project__name">Szkoła rodzenia - Milk</h5>
+
+      <div class="project__description">
+        <p>
+          Strona internetowa wykonana dla łódzkiej szkoły rodzenia MILK. Oparta o CMS WordPress i szablon DIVI od elegant themes
+        </p>
+      </div>
+
+      <div class="project__btns-wrapper">
+        <a
+          href="https://milk.edu.pl/"
+          class="project__btn btn btn--anim1 btn--inverted"
+          target="_blank"
+        >Live</a>
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="card-top">
+        <figure class="project__img  card-top__fig">
+          <img
+            class="card-top__img"
+            src="images/old-portfolio.png"
+            alt="Mockup project 6"
+          >
+
+          <figcaption class="card-top__figcap">
+            <h2 class="card-top__heading">Strona wizytowka</h2>
+
+            <ul>
+              <li>HTML</li>
+
+              <li>CSS</li>
+
+              <li>JavaScript</li>
+
+              <li>jQuery</li>
+
+              <li>Typed.js</li>
+
+              <li>Fullpage.js</li>
+            </ul>
+          </figcaption>
+        </figure>
+      </div>
+
+      <h5 class="project__name">Strona wizytówka</h5>
+
+      <div class="project__description">
+        <p>
+          Dawna strona wizytówka wykonana z wykorzystaniem jQuery Typed.js i Fullpage.js
+        </p>
+      </div>
+
+      <div class="project__btns-wrapper">
+        <a
+          href="https://github.com/gitmatheo/mywebsite"
+          class="project__btn btn btn--anim1 btn--inverted"
+          target="_blank"
+        >Github</a>
+
+        <a
+          href="https://gitmatheo.github.io/mywebsite/"
+          class="project__btn btn btn--anim1 btn--inverted"
+          target="_blank"
+        >Live</a>
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <section
+    class="tech"
+    id="tech"
+  >
+  <div class="tech__wrapper ">
+      <div class="tech__content-wrapper">
+    <h2 class="tech__title heading-tertiary">
+          Technologie i narzędzia z których korzystam.
+    </h2>
+    <p class="tech__desc paragraph">Przez cały okres mojej nauki miałem okazję pracować z...</p>
+    <ul>
+        <li>HTML</li>
+        <li>CSS + Sass (metodologia BEM)</li>
+        <li>JavaScript ES6 +</li>
+        <li>jQuery</li>
+        <li>React.js</li>
+        <li>Styled Components</li>
+        <li>Bootstrap 4</li>
+        <li>NPM</li>
+        <li>WordPress</li>
+        <li>Git</li>
+        <li>Adobe Photoshop, Lightroom</li>
+      </ul>
+    </div>
+    <div class="tech__logos-wrapper">
+      <svg class="tech__logo">
+        <use xlink:href="assets/icons/sprite.svg#icon-html5"></use>
+      </svg>
+      <svg class="tech__logo">
+        <use xlink:href="assets/icons/sprite.svg#icon-css3"></use>
+      </svg>
+      <svg class="tech__logo">
+        <use xlink:href="assets/icons/sprite.svg#icon-sass"></use>
+      </svg>
+      <svg class="tech__logo">
+        <use xlink:href="assets/icons/sprite.svg#icon-javascript"></use>
+      </svg>
+      <svg class="tech__logo">
+        <use xlink:href="assets/icons/sprite.svg#icon-jquery"></use>
+      </svg>
+      <svg class="tech__logo">
+        <use xlink:href="assets/icons/sprite.svg#icon-react"></use>
+      </svg>
+      <svg class="tech__logo">
+        <use xlink:href="assets/icons/sprite.svg#icon-bootstrap"></use>
+      </svg>
+      <svg class="tech__logo">
+        <use xlink:href="assets/icons/sprite.svg#icon-npm"></use>
+      </svg>
+      <svg class="tech__logo">
+        <use xlink:href="assets/icons/sprite.svg#icon-git"></use>
+      </svg>
+      <svg class="tech__logo">
+        <use xlink:href="assets/icons/sprite.svg#icon-wordpress"></use>
+      </svg>
+      <svg class="tech__logo">
+          <use xlink:href="assets/icons/sprite.svg#icon-adobephotoshop"></use>
+        </svg>
+        <svg class="tech__logo">
+            <use xlink:href="assets/icons/sprite.svg#icon-adobelightroom"></use>
+          </svg>
+    </div>
+  </div>
+  <div class="tech__wrapper ">
+      <div class="tech__content-wrapper tech__content-wrapper--reversed">
+      <h2 class="tech__title heading-tertiary">
+            W trakcie nauki...
+      </h2>
+      <p class="tech__desc paragraph">Ostatnio spędzam swój wolny czas na nauce React.js + Redux z użyciem Firebase.</p>
+      </div>
+     
+      <div class="tech__logos-wrapper">
+
+        <svg class="tech__logo">
+          <use xlink:href="assets/icons/sprite.svg#icon-react"></use>
+        </svg>
+        <svg class="tech__logo">
+            <use xlink:href="assets/icons/sprite.svg#icon-redux"></use>
+          </svg>
+        <svg class="tech__logo">
+            <use xlink:href="assets/icons/sprite.svg#icon-firebase"></use>
+        </svg>
+
+
+      </div>
+    </div>
+    <div class="tech__wrapper ">
+        <div class="tech__content-wrapper">
+        <h2 class="tech__title heading-tertiary">
+              W najbliższym czasie chce się nauczyć...
+        </h2>
+        <ul>
+          <li>Vue.js</li>
+          <li>GraphQL</li>
+          <li>Node.js</li>
+          <li>MongoDB</li>
+        </ul>
+      </div>
+
+        <div class="tech__logos-wrapper">
+  
+          <svg class="tech__logo">
+            <use xlink:href="assets/icons/sprite.svg#icon-vue-dot-js"></use>
+          </svg>
+          <svg class="tech__logo">
+              <use xlink:href="assets/icons/sprite.svg#icon-graphql"></use>
+          </svg>
+          <svg class="tech__logo">
+              <use xlink:href="assets/icons/sprite.svg#icon-mongodb"></use>
+            </svg>
+            <svg class="tech__logo">
+                <use xlink:href="assets/icons/sprite.svg#icon-node-dot-js"></use>
+              </svg>
+  
+        </div>
+      </div>
+
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer
+    id="contact"
+    class="footer"
+  >
+    <div class="footer__container">
+      <div class="footer__contact">
+        <h3>Contact</h3>
+
+        <ul>
+          <li>
+            <i class="fas fa-mobile-alt"></i>
+            Tel: +48 695 655 650
+          </li>
+
+          <li>
+            <i class="fas fa-envelope"></i>
+            email: matteuszd@gmail.com
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__socials">
+        <h3>Social Media</h3>
+
+        <ul>
+          <li>
+            <a
+              href="https://github.com/gitmatheo"
+              target="_blank"
+            >
+              <i class="fab fa-github"></i>
+              Github
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://www.linkedin.com/in/mateusz-dominiak/"
+              target="_blank"
+            >
+              <i class="fab fa-linkedin"></i>
+              Linkedin
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://www.youtube.com/user/matteuszd"
+              target="_blank"
+            >
+              <i class="fab fa-youtube"></i>
+              YouTube
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="http://facebook.com/mateuszdominiak"
+              target="_blank"
+            >
+              <i class="fab fa-facebook"></i>
+              Facebook
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="copy">
+        <p>
+          Copyright &copy; 2019 Mateusz Dominak
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./js/particles.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+.header {
+  height: 85vh;
+  background-image: linear-gradient(
+      rgba($color-primary, 0.8),
+      rgba($color-primary-dark, 1)
+    ),
+    url(../images/hero-small2.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+
+  &__wrapper {
+    margin: 0 auto;
+    max-width: 140rem;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 0 $padding-md;
+    position: relative;
+  }
+
+  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 5em));
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 5em));
+    height: 95vh;
+  }
+
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+    only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+    only screen and (min-width: 125em) {
+    background-image: linear-gradient(
+        to top bottom,
+        rgba($color-primary-light, 0.9),
+        rgba($color-primary-dark, 0.9)
+      ),
+      url(../img/hero-small2.jpg);
+  }
+
+  @include respond(phone) {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 10em));
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 10em));
+  }
+
+  &__socials {
+    ul {
+      list-style: none;
+      display: flex;
+      // justify-content: center;
+      padding: 2rem 0;
+      li {
+        // background: red;
+        i {
+          color: rgba($color-white, 1);
+          font-size: 6rem;
+          padding: 0.7rem;
+          transition: all 0.3s ease-out;
+          &:hover {
+            color: rgba($color-white, 0.8);
+            transform: translateY(-3px) scale(1.1);
+          }
+          &:active {
+            color: rgba($color-white, 1);
+            transform: translateY(-1px) scale(1);
+          }
+        }
+      }
+    }
+  }
+  &__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+  }
+
+  &__logo {
+    height: 4.5rem;
+  }
+
+  &__text-box {
+    z-index: 2000;
+  }
+
+  &__btn {
+    margin: 1rem;
+  }
+}
+
+#particles-js {
+  position: absolute;
+  width: 70%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  background-image: url("");
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  z-index: 1000;
+}

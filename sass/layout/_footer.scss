@@ -1,0 +1,63 @@
+// FOOTER
+.footer {
+  background: #16222a; /* fallback for old browsers */
+  background: linear-gradient(
+    to top,
+    $color-primary,
+    $color-primary-dark
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: $default-font-size;
+  &__container {
+    color: rgba($color-white, 0.9);
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    height: 80%;
+    width: 100%;
+    max-width: 140rem;
+    line-height: 150%;
+    padding: 4rem $padding-md;
+    @include respond(tab-port) {
+      flex-direction: column;
+      padding: 2rem 0;
+      div {
+        text-align: center;
+        padding: 2rem 0;
+      }
+    }
+
+    * {
+      line-height: 150%;
+    }
+  }
+  &__copy {
+    align-self: center;
+  }
+  &__contact {
+    text-align: left;
+    @include respond(tab-port) {
+      text-align: center;
+      align-self: center;
+    }
+  }
+  &__socials {
+  }
+  ul {
+    list-style: none;
+  }
+  a {
+    color: rgba(255, 255, 255, 0.8);
+    transition: 0.3s;
+    text-decoration: none;
+    &:hover {
+      color: white;
+    }
+  }
+  i {
+    display: inline-block;
+    padding: 0.5rem;
+  }
+}
