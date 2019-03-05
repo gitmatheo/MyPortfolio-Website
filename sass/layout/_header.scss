@@ -38,28 +38,27 @@
   }
 
   @include respond(phone) {
-      background-image: linear-gradient(
-      rgba($color-primary, 0.8),
-      rgba($color-primary-dark, 1)
-    ),
-    url(../images/hero-phone.jpg);
+    background-image: linear-gradient(
+        rgba($color-primary, 0.8),
+        rgba($color-primary-dark, 1)
+      ),
+      url(../images/hero-phone.jpg);
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 10em));
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 10em));
   }
 
-    @include respond(tab-land) {
-      background-image: linear-gradient(
-      rgba($color-primary, 0.8),
-      rgba($color-primary-dark, 1)
-    ),
-    url(../images/hero-tab.jpg);
+  @include respond(tab-land) {
+    background-image: linear-gradient(
+        rgba($color-primary, 0.8),
+        rgba($color-primary-dark, 1)
+      ),
+      url(../images/hero-tab.jpg);
   }
 
   @include respond(tab-port) {
     // width < 900?
     font-size: 50%; //1 rem = 8px, 8/16 = 50%
   }
-
 
   &__socials {
     ul {
@@ -102,6 +101,8 @@
 
   &__btn {
     margin: 1rem;
+    color: rgba($color-primary-dark, 1);
+    font-weight: 600;
   }
 }
 

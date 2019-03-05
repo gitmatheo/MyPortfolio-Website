@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"></meta>
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  ></meta>
-  <meta
-    http-equiv="X-UA-Compatible"
-    content="ie=edge"
-  ></meta>
-  <title>
-    Mateusz Dominiak - Junior Front-End Developer
-  </title>
-  <link
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- TITLE -->
+    <title>Mateusz Dominiak - Junior Front-End Developer</title>
+    <!-- SEO -->
+    <meta name="description" content="Mateusz Dominiak - Junior Front-End Developer" />
+    <meta name="author" content="Mateusz Dominiak" />
+    <meta name="keywords" content="front-end, html, css, JavaScript, webdeveloper, portfolio, react.js," />
+    <meta name="robots" content="index,follow" />
+    <meta name="X-UA-Compatible" content="ie=edge" />
+    <!-- CSS -->
+    <link
     rel="stylesheet"
     href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
     integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
@@ -23,13 +23,27 @@
     rel="stylesheet"
     href="css/style.css"
   ></link>
-      <!-- scripts -->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
-      <script src="js/main.js"></script>
+    <!-- JAVASCRIPT -->
+    <script src="js/app.js"></script>
+    <!-- FAVICON -->
+    <link rel="icon" href="favicon.png" sizes="16x16" type="image/png" />
+    <link rel="icon" href="favicon.png" sizes="32x32" type="image/png" />
+    <link rel="icon" href="favicon.png" sizes="64x64" type="image/png" />
+    <link rel="icon" href="favicon.png" sizes="96x96" type="image/png" />
+    <!-- FACEBOOK -->
+    <!-- https://developers.facebook.com/docs/sharing/webmasters/ -->
+    <meta property="og:url" content="https://mateuszdominiak.pl" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Mateusz Dominiak - Junior Front-End Developer - Portfolio website" />
+    <meta property="og:image" content="https://mateuszdominiak.pl" />
+    <meta property="og:description" content="Mateusz Dominiak - Junior Front-End Developer - Portfolio website" />
+    <!-- JAVASCRIPT -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+    <script src="js/main.js"></script>
 </head>
 
 <body>
@@ -55,6 +69,7 @@
           <a
             href="#home"
             class="navigation__link"
+            aria-label="Home"
           >Home</a>
         </li>
 
@@ -62,6 +77,7 @@
           <a
             href="#about"
             class="navigation__link"
+            aria-label="About"
           >O mnie</a>
         </li>
 
@@ -69,6 +85,7 @@
           <a
             href="#projects"
             class="navigation__link"
+            aria-label="Projects"
           >Projekty</a>
         </li>
 
@@ -76,6 +93,7 @@
           <a
             href="#tech"
             class="navigation__link"
+            aria-label="Tech"
           >Technologie</a>
         </li>
 
@@ -83,6 +101,7 @@
           <a
             href="#contact"
             class="navigation__link"
+            aria-label="Contact"
           >Kontakt</a>
         </li>
       </ul>
@@ -113,6 +132,7 @@
     <a
       href="#projects"
       class="header__btn btn btn--white btn--animated"
+      aria-label="View Projects"
     >Zobacz projekty</a>
     <a
     href="#cv"
@@ -125,6 +145,7 @@
           <a
             href="https://github.com/gitmatheo"
             target="_blank"
+            aria-label="Github"
           >
             <i class="fab fa-github"></i>
           </a>
@@ -133,6 +154,7 @@
           <a
             href="https://www.linkedin.com/in/mateusz-dominiak/"
             target="_blank"
+            aria-label="Linkedin"
           >
             <i class="fab fa-linkedin"></i>
           </a>
@@ -141,6 +163,7 @@
           <a
             href="https://www.youtube.com/user/matteuszd"
             target="_blank"
+            aria-label="YouTube"
           >
             <i class="fab fa-youtube"></i>
           </a>
@@ -149,6 +172,7 @@
           <a
             href="http://facebook.com/mateuszdominiak"
             target="_blank"
+            aria-label="Facebook"
           >
             <i class="fab fa-facebook"></i>
           </a>
@@ -241,12 +265,14 @@
           href="https://github.com/gitmatheo/Natours"
           class="project__btn btn btn--anim1 btn--inverted"
           target="_blank"
+          aria-label="Project1 Github"
         >Github</a>
 
         <a
           href="https://gitmatheo.github.io/Natours/"
           class="project__btn btn btn--anim1 btn--inverted"
           target="_blank"
+          aria-label="Project1 Live Demo"
         >Live</a>
       </div>
     </div>
@@ -289,12 +315,14 @@
           href="https://github.com/gitmatheo/Trillo"
           class="project__btn btn btn--anim1 btn--inverted"
           target="_blank"
+          aria-label="Project2 Github"
         >Github</a>
 
         <a
           href="https://gitmatheo.github.io/Trillo"
           class="project__btn btn btn--anim1 btn--inverted"
           target="_blank"
+          aria-label="Project2 Live Demo"
         >Live</a>
       </div>
     </div>
@@ -306,6 +334,7 @@
             class="card-top__img"
             src="images/nexter.png"
             alt="Mockup project 3"
+            
           >
 
           <figcaption class="card-top__figcap">
@@ -339,12 +368,14 @@
           href="https://github.com/gitmatheo/Nexter"
           class="project__btn btn btn--anim1 btn--inverted"
           target="_blank"
+          aria-label="Project3 Live Demo"
         >Github</a>
 
         <a
           href="https://gitmatheo.github.io/Nexter/"
           class="project__btn btn btn--anim1 btn--inverted"
           target="_blank"
+          aria-label="Project3 Github"
         >Live</a>
       </div>
     </div>
@@ -393,12 +424,14 @@
           href="https://github.com/gitmatheo/React-Weather-App"
           class="project__btn btn btn--anim1 btn--inverted"
           target="_blank"
+          aria-label="Project4 Github"
         >Github</a>
 
         <a
           href="https://gitmatheo.github.io/React-Weather-App/"
           class="project__btn btn btn--anim1 btn--inverted"
           target="_blank"
+          aria-label="Project4 Live Demo"
         >Live</a>
       </div>
     </div>
@@ -451,12 +484,14 @@
           href="https://github.com/gitmatheo/React-football-app"
           class="project__btn btn btn--anim1 btn--inverted"
           target="_blank"
+          aria-label="Project5 Github"
         >Github</a>
 
         <a
           href="https://m-city-f1280.firebaseapp.com/"
           class="project__btn btn btn--anim1 btn--inverted"
           target="_blank"
+          aria-label="Project5 Live Demo"
         >Live</a>
       </div>
     </div>
@@ -501,12 +536,14 @@
           href="https://github.com/gitmatheo/React-football-app"
           class="project__btn btn btn--anim1 btn--inverted"
           target="_blank"
+          aria-label="Project6 Github"
         >Github</a>
 
         <a
           href="https://gitmatheo.github.io/React-todoapp/"
           class="project__btn btn btn--anim1 btn--inverted"
           target="_blank"
+          aria-label="Project6 Live Demo"
         >Live</a>
       </div>
     </div>
@@ -553,6 +590,7 @@
           href="https://milk.edu.pl/"
           class="project__btn btn btn--anim1 btn--inverted"
           target="_blank"
+          aria-label="Project7 Live Demo"
         >Live</a>
       </div>
     </div>
@@ -599,12 +637,14 @@
           href="https://github.com/gitmatheo/mywebsite"
           class="project__btn btn btn--anim1 btn--inverted"
           target="_blank"
+          aria-label="Project8 Github"
         >Github</a>
 
         <a
           href="https://gitmatheo.github.io/mywebsite/"
           class="project__btn btn btn--anim1 btn--inverted"
           target="_blank"
+          aria-label="Project8 Live Demo"
         >Live</a>
       </div>
     </div>
@@ -623,7 +663,7 @@
     <p class="tech__desc paragraph">Przez cały okres mojej nauki miałem okazję pracować z...</p>
     <ul>
         <li>HTML</li>
-        <li>CSS + Sass (metodologia BEM)</li>
+        <li>CSS + Sass RWD (metodologia BEM)</li>
         <li>JavaScript ES6 +</li>
         <li>jQuery</li>
         <li>React.js</li>
@@ -761,6 +801,7 @@
             <a
               href="https://github.com/gitmatheo"
               target="_blank"
+              aria-label="Github"
             >
               <i class="fab fa-github"></i>
               Github
@@ -771,6 +812,7 @@
             <a
               href="https://www.linkedin.com/in/mateusz-dominiak/"
               target="_blank"
+              aria-label="Linkedin"
             >
               <i class="fab fa-linkedin"></i>
               Linkedin
@@ -781,6 +823,7 @@
             <a
               href="https://www.youtube.com/user/matteuszd"
               target="_blank"
+              aria-label="YouTube"
             >
               <i class="fab fa-youtube"></i>
               YouTube
@@ -791,6 +834,7 @@
             <a
               href="http://facebook.com/mateuszdominiak"
               target="_blank"
+              aria-label="Facebook"
             >
               <i class="fab fa-facebook"></i>
               Facebook

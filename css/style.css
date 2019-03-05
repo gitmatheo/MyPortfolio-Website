@@ -153,7 +153,6 @@ body {
 body {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  /*font-size: 16px;*/
   color: #777;
 }
 
@@ -174,10 +173,6 @@ body {
           animation-duration: 1s;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
-  /*
-      animation-delay: 3s;
-      animation-iteration-count: 3;
-      */
 }
 
 @media only screen and (max-width: 37.5em) {
@@ -427,8 +422,8 @@ body {
 
 .header {
   height: 85vh;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(46, 49, 65, 0.8)), to(#16222a)), url(../images/hero-small2.jpg);
-  background-image: linear-gradient(rgba(46, 49, 65, 0.8), #16222a), url(../images/hero-small2.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(46, 49, 65, 0.8)), to(#16222a)), url(../images/hero-desktop.jpg);
+  background-image: linear-gradient(rgba(46, 49, 65, 0.8), #16222a), url(../images/hero-desktop.jpg);
   background-size: cover;
   background-position: top;
   position: relative;
@@ -459,15 +454,30 @@ body {
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (min-width: 125em) {
   .header {
-    background-image: -webkit-gradient(linear, top bottom, from(rgba(58, 96, 115, 0.9)), to(rgba(22, 34, 42, 0.9))), url(../img/hero-small2.jpg);
-    background-image: linear-gradient(to top bottom, rgba(58, 96, 115, 0.9), rgba(22, 34, 42, 0.9)), url(../img/hero-small2.jpg);
+    background-image: -webkit-gradient(linear, top bottom, from(rgba(58, 96, 115, 0.9)), to(rgba(22, 34, 42, 0.9))), url(../img/hero-tab.jpg);
+    background-image: linear-gradient(to top bottom, rgba(58, 96, 115, 0.9), rgba(22, 34, 42, 0.9)), url(../img/hero-tab.jpg);
   }
 }
 
 @media only screen and (max-width: 37.5em) {
   .header {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(46, 49, 65, 0.8)), to(#16222a)), url(../images/hero-phone.jpg);
+    background-image: linear-gradient(rgba(46, 49, 65, 0.8), #16222a), url(../images/hero-phone.jpg);
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 10em));
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 10em));
+  }
+}
+
+@media only screen and (max-width: 75em) {
+  .header {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(46, 49, 65, 0.8)), to(#16222a)), url(../images/hero-tab.jpg);
+    background-image: linear-gradient(rgba(46, 49, 65, 0.8), #16222a), url(../images/hero-tab.jpg);
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  .header {
+    font-size: 50%;
   }
 }
 
@@ -515,6 +525,8 @@ body {
 
 .header__btn {
   margin: 1rem;
+  color: #16222a;
+  font-weight: 600;
 }
 
 #particles-js {
@@ -908,6 +920,8 @@ body {
 
 .card-top {
   padding: 0;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 
 .card-top__fig {
