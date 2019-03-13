@@ -89,11 +89,17 @@
     position: absolute;
     top: 4rem;
     left: 4rem;
-    // background: yellow;
   }
 
   &__logo {
     height: 7rem;
+    @include respond(tab-port) {
+      height: 6rem;
+    }
+
+    @include respond(phone) {
+      height: 5rem;
+    }
   }
 
   &__text-box {

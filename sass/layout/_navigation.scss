@@ -176,3 +176,38 @@
 .navigation__checkbox:checked + .navigation__nav {
   display: block;
 }
+
+.languages {
+  &__list {
+    height: 7rem;
+    width: 10rem;
+    position: fixed;
+    top: 4rem;
+    right: 15rem;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    @include respond(tab-port) {
+      top: 4rem;
+      right: 14rem;
+    }
+
+    @include respond(phone) {
+      top: 3rem;
+      right: 12rem;
+    }
+  }
+
+  &__item {
+    a {
+      font-size: 3rem;
+      text-decoration: none;
+      color: white;
+    }
+    &--active {
+      font-weight: 900;
+    }
+  }
+}

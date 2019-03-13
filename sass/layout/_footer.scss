@@ -38,12 +38,16 @@
   }
   &__contact {
     text-align: left;
+
     @include respond(tab-port) {
       text-align: center;
       align-self: center;
     }
   }
-  &__socials {
+  .footer__cv {
+    color: rgba($color-primary-dark, 1);
+    font-weight: 600;
+    // padding: 0.8rem 2rem;
   }
   ul {
     list-style: none;
