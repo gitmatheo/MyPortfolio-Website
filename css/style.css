@@ -885,6 +885,12 @@ body {
   width: 70%;
 }
 
+.divider__link {
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+}
+
 .projects {
   background: #16222a;
   -webkit-clip-path: polygon(0 10em, 100% 0, 100% calc(100% - 10em), 0% 100%);
