@@ -6,11 +6,39 @@ document.addEventListener("DOMContentLoaded", function() {
   const tech = [...document.querySelectorAll(".tech__wrapper")];
 
   // *************************
-  // ANIMATIONS
+  // TYPED.JS
+  // *************************
+
+  let typedEn = new Typed("#typed-en", {
+    strings: [
+      "Self-taught...",
+      "Self-motivated...",
+      "Never stop learning...",
+      "Ready for work..."
+    ],
+    typeSpeed: 100,
+    loop: true,
+    showCursor: false
+  });
+
+  let typedPl = new Typed("#typed-pl", {
+    strings: [
+      "Zmotywowany...",
+      "Codziennie podnoszący umiejętności...",
+      "Gotowy do pracy..."
+    ],
+    typeSpeed: 100,
+    loop: true,
+    showCursor: false
+  });
+
+  // *************************
+  // GSAP ANIMATIONS
   // *************************
   //Init ScrollMagic
   const controller = new ScrollMagic.Controller();
   //build a scene
+
   const aboutScene = new ScrollMagic.Scene({
     triggerElement: about,
     triggerHook: 0.6

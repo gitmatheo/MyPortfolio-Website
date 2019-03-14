@@ -1,6 +1,6 @@
 .tech {
   color: $color-primary-dark;
-  font-size: 1.8rem;
+  font-size: $default-font-size;
 
   &__wrapper {
     padding: $padding-md;
@@ -31,7 +31,7 @@
   &__title {
   }
   &__desc {
-    font-size: 1.8rem;
+    font-size: $default-font-size;
   }
 
   &__content-wrapper {

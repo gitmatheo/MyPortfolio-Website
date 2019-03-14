@@ -201,13 +201,19 @@
   }
 
   &__item {
+    color: rgba(white, 0.7);
     a {
       font-size: 3rem;
       text-decoration: none;
-      color: white;
+      color: inherit;
+      transition: all 0.4s;
+      &:hover {
+        color: white;
+      }
     }
     &--active {
       font-weight: 900;
+      color: white;
     }
   }
 }

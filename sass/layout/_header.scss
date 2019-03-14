@@ -110,7 +110,14 @@
     margin: 1rem;
     color: rgba($color-primary-dark, 1);
     font-weight: 600;
+    margin-left: 0;
   }
+}
+
+.typed {
+  display: block;
+  height: 2rem;
+  font-size: 1.6rem;
 }
 
 #particles-js {

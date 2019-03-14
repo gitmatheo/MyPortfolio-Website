@@ -1,7 +1,6 @@
 .divider {
   background-color: lighten($color-primary-dark, 10%);
   margin: 0 auto;
-  // height: 23em;
   padding: 2rem 0;
   margin-bottom: -10em;
   @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
@@ -18,9 +17,7 @@
 
   &__title {
     display: block;
-    font-size: $font-size-large;
     color: rgba($color-white, 0.9);
-    line-height: 200%;
   }
   &__desc {
     font-size: $default-font-size;
