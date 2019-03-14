@@ -1300,6 +1300,12 @@ body {
 .footer .footer__cv {
   color: #16222a;
   font-weight: 600;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.footer .footer__cv:hover {
+  color: #16222a;
 }
 
 .footer ul {

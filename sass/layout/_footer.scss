@@ -47,7 +47,11 @@
   .footer__cv {
     color: rgba($color-primary-dark, 1);
     font-weight: 600;
-    // padding: 0.8rem 2rem;
+    // padding: 1rem 10%;
+    transition: 0.3s;
+    &:hover {
+      color: rgba($color-primary-dark, 1);
+    }
   }
   ul {
     list-style: none;
