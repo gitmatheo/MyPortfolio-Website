@@ -7,13 +7,14 @@
     width: 100%;
     max-width: 140rem;
     padding: 20rem $padding-md 25rem $padding-md;
-    margin: -15em auto;
+    margin: -15rem auto -18rem auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     @include respond(phone) {
       flex-direction: column;
       padding: 20rem 1rem 25rem 1rem;
+      margin: -15rem auto -20rem auto;
     }
   }
 

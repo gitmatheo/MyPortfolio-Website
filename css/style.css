@@ -429,7 +429,7 @@ body {
 
 .header {
   height: 85vh;
-  min-height: 740px;
+  min-height: 720px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(46, 49, 65, 0.8)), to(#16222a)), url(../images/hero-desktop.jpg);
   background-image: linear-gradient(rgba(46, 49, 65, 0.8), #16222a), url(../images/hero-desktop.jpg);
   background-size: cover;
@@ -524,6 +524,10 @@ body {
 }
 
 .header__logo {
+  background-image: url("/images/logo-white.svg");
+  background-position: left;
+  background-repeat: no-repeat;
+  width: 20rem;
   height: 7rem;
 }
 
@@ -535,6 +539,8 @@ body {
 
 @media only screen and (max-width: 37.5em) {
   .header__logo {
+    background-image: url("/images/logo-white-small.svg");
+    width: 20rem;
     height: 5rem;
   }
 }
@@ -819,7 +825,7 @@ body {
   width: 100%;
   max-width: 140rem;
   padding: 20rem 4rem 25rem 4rem;
-  margin: -15em auto;
+  margin: -15rem auto -18rem auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -838,6 +844,7 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
     padding: 20rem 1rem 25rem 1rem;
+    margin: -15rem auto -20rem auto;
   }
 }
 
@@ -1128,10 +1135,15 @@ body {
 .tech {
   color: #16222a;
   font-size: 1.8rem;
+  background: #eee;
+  margin-top: -10rem;
+  margin-bottom: -5rem;
 }
 
 .tech__wrapper {
   padding: 4rem;
+  padding-top: 14rem;
+  padding-bottom: 10rem;
   max-width: 140rem;
   margin: 0 auto;
   display: -webkit-box;
@@ -1249,6 +1261,14 @@ body {
       -ms-flex-align: center;
           align-items: center;
   font-size: 1.8rem;
+  padding-top: 5rem;
+}
+
+@supports ((-webkit-clip-path: polygon(0 0)) or (clip-path: polygon(0 0))) or (-webkit-clip-path: polygon(0 0)) {
+  .footer {
+    -webkit-clip-path: polygon(50% 0%, 100% 5rem, 100% 100%, 0 100%, 0 5rem);
+    clip-path: polygon(50% 0%, 100% 5rem, 100% 100%, 0 100%, 0 5rem);
+  }
 }
 
 .footer__container {

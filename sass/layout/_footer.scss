@@ -10,6 +10,12 @@
   justify-content: center;
   align-items: center;
   font-size: $default-font-size;
+  padding-top: 5rem;
+
+  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+    -webkit-clip-path: polygon(50% 0%, 100% 5rem, 100% 100%, 0 100%, 0 5rem);
+    clip-path: polygon(50% 0%, 100% 5rem, 100% 100%, 0 100%, 0 5rem);
+  }
   &__container {
     color: rgba($color-white, 0.9);
     display: flex;

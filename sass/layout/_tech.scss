@@ -1,9 +1,13 @@
 .tech {
   color: $color-primary-dark;
   font-size: $default-font-size;
-
+  background: $color-grey-light-2;
+  margin-top: -10rem;
+  margin-bottom: -5rem;
   &__wrapper {
     padding: $padding-md;
+    padding-top: 14rem;
+    padding-bottom: 10rem;
     max-width: 140rem;
     margin: 0 auto;
     display: flex;

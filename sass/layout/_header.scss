@@ -1,6 +1,6 @@
 .header {
   height: 85vh;
-  min-height: 740px;
+  min-height: 720px;
   background-image: linear-gradient(
       rgba($color-primary, 0.8),
       rgba($color-primary-dark, 1)
@@ -93,17 +93,22 @@
   }
 
   &__logo {
+    background-image: url("/images/logo-white.svg");
+    background-position: left;
+    background-repeat: no-repeat;
+    width: 20rem;
     height: 7rem;
     @include respond(tab-port) {
       height: 6rem;
     }
 
     @include respond(phone) {
+      background-image: url("/images/logo-white-small.svg");
+      width: 20rem;
       height: 5rem;
     }
     @include respond(phoneSM) {
       height: 5rem;
-      // display: none;
     }
   }
 
