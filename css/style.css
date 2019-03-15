@@ -429,6 +429,7 @@ body {
 
 .header {
   height: 85vh;
+  min-height: 740px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(46, 49, 65, 0.8)), to(#16222a)), url(../images/hero-desktop.jpg);
   background-image: linear-gradient(rgba(46, 49, 65, 0.8), #16222a), url(../images/hero-desktop.jpg);
   background-size: cover;
@@ -533,6 +534,12 @@ body {
 }
 
 @media only screen and (max-width: 37.5em) {
+  .header__logo {
+    height: 5rem;
+  }
+}
+
+@media only screen and (max-width: 22.5em) {
   .header__logo {
     height: 5rem;
   }

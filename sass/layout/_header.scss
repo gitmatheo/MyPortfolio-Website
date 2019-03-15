@@ -1,5 +1,6 @@
 .header {
   height: 85vh;
+  min-height: 740px;
   background-image: linear-gradient(
       rgba($color-primary, 0.8),
       rgba($color-primary-dark, 1)
@@ -99,6 +100,10 @@
 
     @include respond(phone) {
       height: 5rem;
+    }
+    @include respond(phoneSM) {
+      height: 5rem;
+      // display: none;
     }
   }
 
