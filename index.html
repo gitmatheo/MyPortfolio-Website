@@ -39,12 +39,12 @@
     <meta property="og:description" content="Mateusz Dominiak - Junior Front-End Developer - Portfolio website" />
     <!-- JAVASCRIPT -->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script> -->
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
-    <script src="js/main.js"></script>
+    
 </head>
 
 <body>
@@ -134,7 +134,7 @@
       <span id="typed-pl" class="typed"></span>
 
       <span id="typed"></span>
-      <span class="heading-primary--sub">Junior Front-End Developer</span>
+      <span class="heading-primary--sub">Front-End Developer</span>
     </h1>
 
     <a
@@ -940,7 +940,22 @@
       </div>
     </div>
   </footer>
+
   <script src="./js/particles.js"></script>
-  <script src="js/app.js"></script>
+  <script src="./js/app.js"></script>
+  <script src="./js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+ <script>
+ 
+ let typedPl = new Typed("#typed-pl", {
+    strings: [
+      "Zmotywowany...",
+      "Gotowy do pracy..."
+    ],
+    typeSpeed: 100,
+    loop: true,
+    showCursor: false
+  });
+ </script>
 </body>
 </html>
